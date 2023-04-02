@@ -78,13 +78,27 @@
 
         <!-- header -->
         <div class="row" id="header">
-            <div class="col p-0 ps-lg-0" style="padding-right: 8px;">
-                <img src="assets/img/principal.jpg" alt="pizza" class="img-fluid">
+            <hr class="separator_mobile d-block d-lg-none">
+            <div class="col-lg p-0 ps-lg-0" style="padding-right: 8px;">
+                <img class="img-fluid" src="assets/img/principal.jpg" alt="pizza">
             </div>
-            <div class="col text-start d-flex align-items-center" style="padding-left: 8px; line-height: 100%;">
+            <!-- description to mobile view -->
+            <div class="description d-block d-lg-none col-lg text-center p-0" style="padding-left: 8px; line-height: 100%;">
+                <h1>PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
+                <hr class="separator_mobile">
+                <p class="tiempo mb-3">110 MIN / 6 A 8 PORCIONES</p>
+                <button type="button" class="btn me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar a tu correo">
+                    Enviar por correo
+                </button>
+                <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Agrega esta receta a tus favoritos">
+                    Añadir a favoritos
+                </button>
+            </div>
+            <!-- description to website view -->
+            <div class="description d-none d-lg-block col-lg text-lg-start d-lg-flex align-items-center" style="padding-left: 8px; line-height: 100%;">
                 <div class="container">
                     <h1>PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
-                    <hr style="width: 100%; border: 1px solid #373A3C; opacity: 1; ">
+                    <hr class="d-none d-lg-block" style="width: 100%; border: 1px solid #373A3C; opacity: 1;">
                     <p class="tiempo mb-3">110 MIN / 6 A 8 PORCIONES</p>
                     <button type="button" class="btn me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar a tu correo">
                         Enviar por correo
@@ -144,7 +158,7 @@
 
         <!-- Ingredientes y preparacion -->
         <div class="row align-items-start" id="pizza_recipe" style="margin-bottom: 21px;">
-            <hr style="width: 100%; border: 1px solid #373A3C; opacity: 1; margin-top: 18px; margin-bottom: 40px;">
+            <hr class="d-none d-lg-block" style="width: 100%; border: 1px solid #373A3C; opacity: 1; margin-top: 18px; margin-bottom: 40px;">
             <div class="col text-start">
                 <p>
                     <b><u>INGREDIENTES</u></b>

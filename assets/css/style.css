@@ -25,18 +25,25 @@ body {
     padding-right: 37px;
 }
 
+h1 {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
 @media (min-width: 992px) {
     .row {
         padding-left: 150px;
         padding-right: 150px;
     }
+
+    h1 {
+        font-size: 40px;
+        line-height: 49px;
+        font-weight: bold;
+    }
 }
 
-h1 {
-    font-size: 40px;
-    line-height: 49px;
-    font-weight: bold;
-}
 
 /* ---- Navbar ---- */
 #navbar {
@@ -65,8 +72,26 @@ h1 {
 
 /* ---- Header Styles ---- */
 #header {
-    margin-top: 24px;
-    margin-bottom: 68px;
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+
+.separator_mobile {
+    width: 100%;
+    margin-bottom: 14px;
+    border: 1px solid #373A3C;
+    opacity: 1;
+}
+
+@media (max-width: 575.98px) {
+    .description {
+        margin-top: 13.5px;
+    }
+
+    .tiempo {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .tiempo {
@@ -74,6 +99,11 @@ h1 {
 }
 
 @media (min-width: 992px) {
+    #header {
+        margin-top: 24px;
+        margin-bottom: 68px;
+    }
+
     .tiempo {
         font-size: 20px;
     }
