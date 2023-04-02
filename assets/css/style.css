@@ -21,8 +21,15 @@ body {
 }
 
 .row {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+@media (min-width: 992px) {
+    .row {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 }
 
 h1 {
@@ -43,6 +50,10 @@ h1 {
     font-size: 37px;
 }
 
+.navbar-dark .navbar-toggler {
+    border: 1px solid #777777;
+}
+
 .nav-link {
     color: #FFF !important;
 }
@@ -51,16 +62,11 @@ h1 {
     color: #DDDDDD !important;
 }
 
-@media (min-width: 992px) {
-    .navbar-brand {
-        font-size: 37px;
-    }
-}
 
 /* ---- Header Styles ---- */
 #header {
-    height: 470px;
     margin-top: 24px;
+    margin-bottom: 68px;
 }
 
 .tiempo {
@@ -88,4 +94,58 @@ h1 {
     width: 13px;
     height: 13px;
     border-radius: 100%;
+}
+
+
+/* ---- Receta Styles ---- */
+#pizza_recipe {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+/* ---- Recetas relacionadas ---- */
+#recipe_title {
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+
+/* ---- Suscripcion ---- */
+#subscription {
+    height: 534px;
+    background-color: #DC3545;
+    color: #FFFFFF
+}
+
+.subs_tittle {
+    margin-top: 150.5px;
+}
+
+.subs_tittle_2 {
+    margin-bottom: 39.5px;
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.subs_btn {
+    line-height: 40px;
+    width: 233px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    background-color: #DC3545;
+    color: #FFFFFF;
+}
+
+
+/* ---- Footer ---- */
+#footer {
+    height: 90px;
+    background-color: #373A3C;
+    color: #FFF;
+}
+
+.logo_footer {
+    font-family: 'Lobster', cursive;
 }
