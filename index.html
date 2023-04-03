@@ -87,7 +87,7 @@
                 <h1>PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
                 <hr class="separator_mobile">
                 <p class="tiempo mb-3">110 MIN / 6 A 8 PORCIONES</p>
-                <button type="button" class="btn me-3 float-start" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar a tu correo">
+                <button id="send" type="button" class="btn me-3 float-start"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar a tu correo">
                     Enviar por correo
                 </button>
                 <button type="button" class="btn float-end" data-bs-toggle="tooltip" data-bs-placement="right" title="Agrega esta receta a tus favoritos">
@@ -100,7 +100,7 @@
                     <h1>PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
                     <hr class="d-none d-lg-block" style="width: 100%; border: 1px solid #373A3C; opacity: 1;">
                     <p class="tiempo mb-3">110 MIN / 6 A 8 PORCIONES</p>
-                    <button type="button" class="btn me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar a tu correo">
+                    <button id="send" type="button" class="btn me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar a tu correo">
                         Enviar por correo
                     </button>
                     <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Agrega esta receta a tus favoritos">
@@ -111,7 +111,7 @@
         </div>
 
         <!-- Carousel -->
-        <div class="row d-none d-lg-block" id="carousel">
+        <div class="row d-none d-sm-none d-lg-block" id="carousel">
             <div class="col p-0">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -161,7 +161,7 @@
             <hr class="d-none d-lg-block" style="width: 100%; border: 1px solid #373A3C; opacity: 1; margin-top: 18px; margin-bottom: 40px;">
             <div class="col-lg text-start p-0">
                 <p class="mb-5">
-                    <b><u>INGREDIENTES</u></b>
+                    <span id="ingredientes"><b><u>INGREDIENTES</u></b></span>
                     <br><br>
                     Masa <br><br>
                     20 gr de levadura seca instantánea <br>
@@ -196,7 +196,7 @@
             </div>
             <div class="col-lg text-start p-0 ms-0" id="preparacion">
                 <p>
-                    <b><u>PREPARACIÓN</u></b>
+                    <span id="preparacion_title"><b><u>PREPARACIÓN</u></b></span>
                     <br><br>
                     1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos.
                     Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina,
@@ -285,7 +285,7 @@
 
     <!-- Scripts -->
     <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <!-- Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
@@ -296,7 +296,21 @@
         var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
+
+        $(document).ready(function(){
+            $(send).click(function(){
+                alert("El correo fue enviado correctamente");
+            });
+
+            $(ingredientes).on("dblclick", function(){
+                $(ingredientes).css({"color": "red"});
+            });
+
+            $(preparacion_title).on("dblclick", function(){
+                $(preparacion_title).css({"color": "red"});
+            });
+        });
+
     </script>
 </body>
-
 </html>
