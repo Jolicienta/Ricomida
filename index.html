@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center" id="container_viewport">
 
         <!-- navbar -->
         <div class="row" id="navbar">
@@ -226,7 +226,7 @@
         <div class="row text-center" id="other_recipe">
             <h1 style="margin-bottom: 50.5px;">RECETAS RELACIONADAS</h1>
             <!-- Receta 1  -->
-            <div class="col-lg text-start">
+            <div class="col-lg text-start p-0">
                 <div class="card" id="recipe_1">
                     <div class="container-fluid p-0" id="pic_recipe">
                         <img src="assets/img/recipe-card-1.png" class="img-fluid card-img-top" alt="PANQUEQUES CON MANJAR Y CREMA">
@@ -239,10 +239,10 @@
                 </div>
             </div>
             <!-- Receta 2  -->
-            <div class="col-lg text-start d-flex justify-content-center">
+            <div class="col-lg text-start d-flex justify-content-center p-0">
                 <div class="card container-fluid p-0" id="recipe_2">
                     <div class="container-fluid p-0" id="pic_recipe">
-                        <img src="assets/img/recipe-card-2.png" class="img- fluid card-img-top" alt="TIRAMISÚ">
+                        <img src="assets/img/recipe-card-2.png" class="img-fluid card-img-top" alt="TIRAMISÚ">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title" id="recipe_title">TIRAMISÚ</h5>
@@ -252,10 +252,10 @@
                 </div>
             </div>
             <!-- Receta 3  -->
-            <div class="col-lg text-start d-flex justify-content-end">
+            <div class="col-lg text-start d-flex justify-content-end p-0">
                 <div class="card" id="recipe_3">
                     <div class="container-fluid p-0" id="pic_recipe">
-                        <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="PLATEADA">
+                        <img src="assets/img/recipe-card-3.png" class="img-fluid card-img-top" alt="PLATEADA">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title" id="recipe_title">PLATEADA</h5>
@@ -268,7 +268,7 @@
 
         <!-- Suscripcion  -->
         <div class="row text-center mb-0" id="subscription">
-            <div class="col">
+            <div class="col p-0">
                 <h1 class="subs_tittle">SUSCRÍBETE EN NUESTRO NEWSLETTER</h1>
                 <h2 class="subs_tittle_2">y obtén las mejores recetas que tenemos en <span style="font-family: 'Lobster', cursive;">Ricomida</span> </h2>
                 <button class="subs_btn p-0" type="button">Empezar</button>
@@ -277,7 +277,9 @@
 
         <!-- Footer -->
         <div class="row justify-content-center d-flex align-items-center mb-0" id="footer">
-            <h2 class="logo_footer mb-0">Ricomida</h2>
+            <div class="col">
+                <h2 class="logo_footer mb-0">Ricomida</h2>
+            </div>
         </div>
     </div>
 

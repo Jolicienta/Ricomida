@@ -11,6 +11,14 @@ body {
     margin: 0;
 }
 
+@media (max-width: 575.98px) {
+    #container_viewport {
+        height: 100%;
+        position: relative;
+        padding-bottom: 75px;
+    }
+}
+
 .tooltip-margin {
     margin: 5px;
 }
@@ -206,19 +214,25 @@ h1 {
 
 /* ---- Suscripcion ---- */
 #subscription {
-    height: 534px;
+    height: 448px;
     background-color: #DC3545;
-    color: #FFFFFF
+    color: #FFFFFF;
+}
+
+@media (max-width: 575.98px) {
+    .subs_tittle {
+        margin-bottom: 22px;
+    }
 }
 
 .subs_tittle {
-    margin-top: 150.5px;
+    margin-top: 95.5px;
 }
 
 .subs_tittle_2 {
-    margin-bottom: 39.5px;
-    font-size: 30px;
-    line-height: 38px;
+    margin-bottom: 27.5px;
+    font-size: 20px;
+    line-height: 25px;
 }
 
 .subs_btn {
@@ -235,14 +249,37 @@ h1 {
     color: #DC3545;
 }
 
+@media (min-width: 992px) {
+    #subscription {
+        height: 534px;
+    }
+
+    .subs_tittle {
+        margin-top: 150.5px;
+    }
+
+    .subs_tittle_2 {
+        margin-bottom: 39.5px;
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
 
 /* ---- Footer ---- */
 #footer {
-    height: 90px;
+    height: 120px;
     background-color: #373A3C;
     color: #FFF;
 }
 
 .logo_footer {
     font-family: 'Lobster', cursive;
+    font-size: 37px;
+}
+
+@media (min-width: 992px) {
+    #footer {
+        height: 90px;
+    }
 }
