@@ -87,10 +87,10 @@
                 <h1>PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
                 <hr class="separator_mobile">
                 <p class="tiempo mb-3">110 MIN / 6 A 8 PORCIONES</p>
-                <button type="button" class="btn me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar a tu correo">
+                <button type="button" class="btn me-3 float-start" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar a tu correo">
                     Enviar por correo
                 </button>
-                <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Agrega esta receta a tus favoritos">
+                <button type="button" class="btn float-end" data-bs-toggle="tooltip" data-bs-placement="right" title="Agrega esta receta a tus favoritos">
                     Añadir a favoritos
                 </button>
             </div>
@@ -157,10 +157,10 @@
         </div>
 
         <!-- Ingredientes y preparacion -->
-        <div class="row align-items-start" id="pizza_recipe" style="margin-bottom: 21px;">
+        <div class="row align-items-start" id="pizza_recipe">
             <hr class="d-none d-lg-block" style="width: 100%; border: 1px solid #373A3C; opacity: 1; margin-top: 18px; margin-bottom: 40px;">
-            <div class="col text-start">
-                <p>
+            <div class="col-lg text-start p-0">
+                <p class="mb-5">
                     <b><u>INGREDIENTES</u></b>
                     <br><br>
                     Masa <br><br>
@@ -194,7 +194,7 @@
                     4 cucharadas queso parmesano <br>
                 </p>
             </div>
-            <div class="col text-start" style="margin-left: 8px;">
+            <div class="col-lg text-start p-0 ms-0" id="preparacion">
                 <p>
                     <b><u>PREPARACIÓN</u></b>
                     <br><br>
@@ -223,15 +223,15 @@
         </div>
 
         <!-- recetas relacionadas  -->
-        <div class="row text-center" style="margin-bottom: 79.19px;">
+        <div class="row text-center" id="other_recipe">
             <h1 style="margin-bottom: 50.5px;">RECETAS RELACIONADAS</h1>
             <!-- Receta 1  -->
-            <div class="col text-start">
-                <div class="card" style="margin-right: 8px;">
-                    <div class="container-fluid p-0" style="height: 180px;">
-                        <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="..." style="height: 100%;">
+            <div class="col-lg text-start">
+                <div class="card" id="recipe_1">
+                    <div class="container-fluid p-0" id="pic_recipe">
+                        <img src="assets/img/recipe-card-1.png" class="img-fluid card-img-top" alt="PANQUEQUES CON MANJAR Y CREMA">
                     </div>
-                    <div class="card-body" style="height: 197.81px; border: 1px solid #DDDDDD; border-radius: 0 0 4px 4px;">
+                    <div class="card-body">
                         <h5 class="card-title" id="recipe_title">PANQUEQUES CON MANJAR Y CREMA</h5>
                         <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut
                             nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
@@ -239,12 +239,12 @@
                 </div>
             </div>
             <!-- Receta 2  -->
-            <div class="col text-start d-flex justify-content-center">
-                <div class="card container-fluid p-0" style="margin: 0 8px;">
-                    <div class="container-fluid p-0" style="height: 180px;">
-                        <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="..." style="height: 100%">
+            <div class="col-lg text-start d-flex justify-content-center">
+                <div class="card container-fluid p-0" id="recipe_2">
+                    <div class="container-fluid p-0" id="pic_recipe">
+                        <img src="assets/img/recipe-card-2.png" class="img- fluid card-img-top" alt="TIRAMISÚ">
                     </div>
-                    <div class="card-body" style="height: 197.81px; border: 1px solid #DDDDDD; border-radius: 0 0 4px 4px;">
+                    <div class="card-body">
                         <h5 class="card-title" id="recipe_title">TIRAMISÚ</h5>
                         <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin
                             phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
@@ -252,12 +252,12 @@
                 </div>
             </div>
             <!-- Receta 3  -->
-            <div class="col text-start d-flex justify-content-end">
-                <div class="card" style="margin-left: 8px;">
-                    <div class="container-fluid p-0" style="height: 180px;">
-                        <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="..." style="height: 100%;">
+            <div class="col-lg text-start d-flex justify-content-end">
+                <div class="card" id="recipe_3">
+                    <div class="container-fluid p-0" id="pic_recipe">
+                        <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="PLATEADA">
                     </div>
-                    <div class="card-body" style="height: 197.81px; border: 1px solid #DDDDDD; border-radius: 0 0 4px 4px;">
+                    <div class="card-body">
                         <h5 class="card-title" id="recipe_title">PLATEADA</h5>
                         <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam
                             aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
